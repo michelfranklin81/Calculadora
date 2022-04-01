@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bgd {
+  background-color: #BC8CF2;
+  /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.774), rgba(84, 73, 236, 0.692)); */
+  height: 100vw;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.calc {
+  position: absolute;
+  background-color: #000000;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+}
+.botao {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgba(41, 34, 34, 0.404);
+  border: none;
+  color: #ffffff;
+  margin: 3px;
+}
+.botao:hover {
+  background-color: #000000;
+}
+#result {
+  background-color: #ffffff;
+  width: 215px;
+  height: 30px;
+  margin: 5px;
+  font-size: 25px;
+  color: #000000;
+  text-align: right;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 375px){ /* Responsividade: os Breakpoints (Pontos de quebra) devem receber os atributos - a partir de qual medida o navegador deve "quebrar". */ 
+  
+  main {
+    width: 350px;
+    /* box-shadow: none; */
+  }
+  .bgd {
+    height: 160vw;
+  
+  }
+  #title {
+    padding: 15px;
+  }
+
+  .calc {
+    top: 54%;
+  }
+  .botao:hover {
+    background-color: #0f0f0f;
+  }
+}
